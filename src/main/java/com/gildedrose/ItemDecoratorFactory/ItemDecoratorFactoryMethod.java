@@ -9,16 +9,18 @@ import java.util.HashMap;
 
 public class ItemDecoratorFactoryMethod {
     private static final HashMap<String, Class<?>> itemsFactory = new HashMap<>();
-    private static String AGED_BRIE_NAME, SULFURAS_NAME, BACKSTAGE_NAME;
+    private static String AGED_BRIE_NAME, SULFURAS_NAME, BACKSTAGE_NAME, CONJURED_NAME;
 
     static {
         AGED_BRIE_NAME = "Aged Brie";
         SULFURAS_NAME = "Sulfuras, Hand of Ragnaros";
         BACKSTAGE_NAME = "Backstage passes to a TAFKAL80ETC concert";
+        CONJURED_NAME = "Conjured";
 
         itemsFactory.put(AGED_BRIE_NAME, AgedBrieItem.class);
         itemsFactory.put(SULFURAS_NAME, SulfurasItem.class);
         itemsFactory.put(BACKSTAGE_NAME, BackstageItem.class);
+        itemsFactory.put(CONJURED_NAME, ConjuredItem.class);
     }
 
 
